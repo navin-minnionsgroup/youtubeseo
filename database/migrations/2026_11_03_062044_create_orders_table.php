@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
+            $table->string('channel')->nullable();
+            $table->string('niche')->nullable();
+            $table->text('note')->nullable();
             $table->decimal('amount', 8, 2);
             $table->string('plan_name');
             $table->string('status')->default('pending'); // pending, success, failed
